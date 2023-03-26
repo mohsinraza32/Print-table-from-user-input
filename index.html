@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Table from user input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Print Table from user input</h1>
+    <form onsubmit="tablePrint();return false">
+        <label for="inputNumber">Enter Number:</label>
+        <input type="number"  id="inputNumber" placeholder="Enter Number">
+        <button type="submit">submit</button>
+        <div id="result"></div>
+    </div>
+    </form>
+    <script>
+            function tablePrint(){
+
+                let input = +document.querySelector("#inputNumber").value;
+
+                document.querySelector("#result").innerHTML = "";
+
+                for( i = 0 ; i < 10; i++){
+
+            document.querySelector("#result").innerHTML += `<h3>${input} x ${i+1} = ${input * (i+1)}</h3>`;
+             
+            }
+            }
+           
+    
+    </script>
+</body>
+</html>

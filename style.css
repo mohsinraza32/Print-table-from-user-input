@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+}
+.main{
+   text-align: center;
+   font-family: sans-serif;
+   color: red;
+}
+button{
+    background-color: blue;
+    color: azure;
+    cursor: pointer;
+}
+button:hover{
+    background-color: brown;
+}
